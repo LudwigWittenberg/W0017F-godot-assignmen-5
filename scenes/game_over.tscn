@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://ct3d5vfbur71h"]
+
+[ext_resource type="Script" path="res://scripts/game_over.gd" id="1_hi4i1"]
+[ext_resource type="Texture2D" uid="uid://cgesy1v34v28o" path="res://assets/GameOver.png" id="2_jx3xn"]
+[ext_resource type="AudioStream" uid="uid://cok3634l6ha7t" path="res://assets/sound/game-over.mp3" id="3_3iouy"]
+
+[node name="GameOver" type="Node"]
+script = ExtResource("1_hi4i1")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = -1.0
+offset_right = 320.0
+offset_bottom = 179.0
+texture = ExtResource("2_jx3xn")
+
+[node name="Title" type="Label" parent="."]
+visible = false
+offset_left = 62.0
+offset_top = 25.0
+offset_right = 233.0
+offset_bottom = 67.0
+theme_override_font_sizes/font_size = 30
+text = "Game Over!"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 59.0
+offset_top = 81.0
+offset_right = 226.0
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(0.996078, 0.286275, 0.00784314, 1)
+text = "NUMBER OF ROUNDS"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_3iouy")
+autoplay = true

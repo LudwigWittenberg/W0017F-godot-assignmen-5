@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ppp0rsnwopcc"
+path="res://.godot/imported/ouch-oof-hurt-sound-effect-262616 (mp3cut.net).mp3-7119222dfcc89b98a0f5ab941577a2e4.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/ouch-oof-hurt-sound-effect-262616 (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/ouch-oof-hurt-sound-effect-262616 (mp3cut.net).mp3-7119222dfcc89b98a0f5ab941577a2e4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

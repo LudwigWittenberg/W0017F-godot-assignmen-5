@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://o03yega8hrmx"]
+
+[ext_resource type="Script" path="res://scripts/tutorial.gd" id="1_3oe35"]
+
+[node name="Tutorial" type="Node"]
+script = ExtResource("1_3oe35")
+
+[node name="Title" type="Label" parent="."]
+offset_left = 110.0
+offset_right = 202.0
+offset_bottom = 23.0
+text = "How to Play"
+
+[node name="Instructions" type="Label" parent="."]
+offset_left = 37.0
+offset_top = 31.0
+offset_right = 258.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 10
+text = "- Use W, A, S, D to move.
+- Left-click to attack.\""
+
+[node name="Instructions2" type="Label" parent="."]
+offset_left = 37.0
+offset_top = 67.0
+offset_right = 275.0
+offset_bottom = 132.0
+theme_override_font_sizes/font_size = 10
+text = "Your task is to complete as many waves as you can. After every 5 waves, you have the option to extract, which will return you to the main menu."
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Back" type="Button" parent="."]
+offset_left = 124.0
+offset_top = 144.0
+offset_right = 194.0
+offset_bottom = 175.0
+theme_override_font_sizes/font_size = 10
+text = "Back
+"

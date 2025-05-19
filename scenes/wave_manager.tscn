@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3f8yk1oolam4"]
+
+[ext_resource type="Script" path="res://scripts/wave_manager.gd" id="1_a6j4j"]
+[ext_resource type="AudioStream" uid="uid://cfn0imi6fb5el" path="res://assets/sound/short-round-110940.mp3" id="2_rc5up"]
+
+[node name="WaveManager" type="Node2D"]
+z_index = 1
+script = ExtResource("1_a6j4j")
+
+[node name="WaveDelay" type="Timer" parent="."]
+
+[node name="WaveTextTimer" type="Timer" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="WaveLable" type="Label" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="newWAveTimer" type="Timer" parent="."]
+
+[node name="Extract" type="CanvasLayer" parent="."]
+
+[node name="Extract" type="Label" parent="Extract"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ExtractionTimer" type="Timer" parent="Extract"]
+
+[node name="LableTimer" type="Timer" parent="Extract"]
+
+[node name="RoundOver" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_rc5up")
+
+[connection signal="timeout" from="WaveTextTimer" to="." method="_on_wave_text_timer_timeout"]
+[connection signal="timeout" from="newWAveTimer" to="." method="_on_new_w_ave_timer_timeout"]
+[connection signal="timeout" from="Extract/ExtractionTimer" to="." method="_on_extraction_timer_timeout"]
+[connection signal="timeout" from="Extract/LableTimer" to="." method="_on_lable_timer_timeout"]

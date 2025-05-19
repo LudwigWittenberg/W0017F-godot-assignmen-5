@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3bk3tdieoxta"
+path="res://.godot/imported/among-us-kill-sound-effect-hd_gIEZqxo (mp3cut.net).mp3-a9a7f0a57c45918ce01c9c86e129ca0a.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/among-us-kill-sound-effect-hd_gIEZqxo (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/among-us-kill-sound-effect-hd_gIEZqxo (mp3cut.net).mp3-a9a7f0a57c45918ce01c9c86e129ca0a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
